@@ -13,6 +13,7 @@ public class Main {
         float r;
 
         float A;
+
         System.out.println("Please enter a number: ");
         Scanner reader = new Scanner(System.in);
 
@@ -22,7 +23,20 @@ public class Main {
 
         A = pi * r * r;
 
-        System.out.println("The area of a circle of radius "+ r + " is: "+ A);
+        if (r < 0) {
+
+            System.out.println("only positive numbers are allowed");
+
+        }
+
+        else{
+            System.out.println("The area of a circle of radius "+ r + " is: "+ A);
+
+
+        }
+
+
+
 
 
 
