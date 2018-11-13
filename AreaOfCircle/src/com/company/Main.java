@@ -5,40 +5,41 @@ import java.util.Scanner;
 public class Main {
 
 
-
-
     public static void main(String[] args) {
-        float pi =  3.14f;
+        private static final double PI =  3.14;
 
-        float r;
 
-        float A;
+
+
 
         System.out.println("Please enter a number: ");
         Scanner reader = new Scanner(System.in);
 
-        r = reader.nextInt();
+        double radius = reader.nextInt();
 
         reader.close();
 
-        A = pi * r * r;
+        double Area = calculateArea(radius);
 
-        if (r < 0) {
+        if (radius < 0) {
 
             System.out.println("only positive numbers are allowed");
 
         }
 
         else{
-            System.out.println("The area of a circle of radius "+ r + " is: "+ A);
+            System.out.println("The area of a circle of radius "+ radius + " is: "+ Area);
 
 
         }
 
 
 
+    }
 
+    private  static double calculateArea(double radius){
 
+        return PI * radius * radius;
 
     }
 }
