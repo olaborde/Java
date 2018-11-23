@@ -6,8 +6,6 @@ public class Main {
 
 
     public static void main(String[] args) {
-        private static final double PI =  3.14;
-
 
 
 
@@ -19,7 +17,9 @@ public class Main {
 
         reader.close();
 
-        double Area = calculateArea(radius);
+
+
+
 
         if (radius < 0) {
 
@@ -28,18 +28,19 @@ public class Main {
         }
 
         else{
+            double Area = calculateArea(radius);
             System.out.println("The area of a circle of radius "+ radius + " is: "+ Area);
 
 
         }
 
 
-
     }
 
-    private  static double calculateArea(double radius){
-
+    public static double calculateArea(double radius) {
+        final double PI =  3.14;
         return PI * radius * radius;
-
     }
+
+
 }
