@@ -26,6 +26,12 @@ public class HelloController {
         return "See Ya";
     }
 
+    @RequestMapping(value = "bye")
+
+    public String bye(){
+        return "redirect:/";
+    }
+
     @RequestMapping(value = "hello", method = RequestMethod.GET)
     @ResponseBody
     public String helloForm(){
