@@ -9,5 +9,9 @@ public class Main {
 
         String theMenuItems = "Name: "+ menuItems.getName()+ "\nCategory: "+ menuItems.getCategory()+ "\nDescription: "+ menuItems.getDescription()+" \nPrice: "+ menuItems.getPrice() ;
         System.out.println(theMenuItems);
+
+        System.out.println(menuItems.toString());
+
+
     }
 }

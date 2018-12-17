@@ -63,4 +63,22 @@ public class MenuItem {
     public void setNew(boolean aNew) {
         isNew = aNew;
     }
+
+
+    //additional methods
+    // addMenuItem(menuItem): add menuItemsLIst
+    // removeMenuItem(menuItem): removemenuItemsList
+    // removeMenuItem(int index): removemenuItemsList
+    //method getLastUpdate
+
+//    @Override
+//    public String toString(){
+//        String ItemString = name + ".................."+ getPrice() + '\n' + description;
+
+//        if(isNew)
+//            itemString
+//    }
+
+
+
 }
