@@ -48,6 +48,6 @@ abstract public class Question {
     public abstract boolean validateAnswer(String string);
     public abstract String getInvalidMessage();
 
-    //enumeration
+    //enum
     protected enum Type{Mulitple_CHOICE, TRUE_ORFALSE, CHECKBOX};
 }
